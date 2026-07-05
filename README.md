@@ -1,8 +1,6 @@
-# Professional Developer Portfolio & Resume Website
+# Portfolio Website
 
-A premium, interactive, and responsive developer portfolio website designed for **Gopichand Sabbavarapu**. The site features a clean glassmorphism dark-mode aesthetic with a custom tiffany-green accent theme, built entirely from scratch with semantic structures and animations.
-
----
+https://gopichand241975.github.io/My_Portfolio/
 
 ## 🛠️ Stack and Tools Used in This Portfolio
 
