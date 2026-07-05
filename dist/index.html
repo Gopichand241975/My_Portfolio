@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gopichand Sabbavarapu | Portfolio</title>
+  <meta name="description" content="Professional portfolio of Gopichand Sabbavarapu, B.Tech CSE student at CIT Kokrajhar and Artificial Intelligence Intern.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <script type="module" crossorigin src="/assets/index-DscL4iyP.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BztfWB_G.css">
+</head>
+<body>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-symbol">&lt;</span>Gopichand<span class="logo-accent">.S</span><span class="logo-symbol">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-container">
+      <!-- Hero Left: Bio & Heading -->
+      <div class="hero-content">
+        <span class="hero-welcome">Welcome to my space</span>
+        <h1 class="hero-title">Gopichand <span class="highlight-text">Sabbavarapu</span></h1>
+        <h2 class="hero-subtitle">I'm a <span id="typing-text"></span><span class="typing-cursor">|</span></h2>
+        <p class="hero-description">
+          Aspiring Computer Science Engineer specializing in Artificial Intelligence, Machine Learning, and Full-Stack development. Currently gaining hands-on experience as an Artificial Intelligence Intern.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary" id="btn-hero-contact">Get In Touch</a>
+          <a href="#projects" class="btn btn-secondary" id="btn-hero-projects">View Projects</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:gopichand241975@gmail.com" class="social-icon" aria-label="Email Address">
+            <i class="fa-regular fa-envelope"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="6">0</span>
+            <span class="stat-label">Certifications</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="8">0</span>
+            <span class="stat-label">CGPA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right: Interactive Console -->
+      <div class="hero-console">
+        <div class="console-header">
+          <div class="console-buttons">
+            <span class="c-btn close"></span>
+            <span class="c-btn minimize"></span>
+            <span class="c-btn expand"></span>
+          </div>
+          <span class="console-title">gopichand@portfolio: ~</span>
+        </div>
+        <div class="console-body" id="console-body">
+          <div class="console-line">
+            <span class="console-prompt">guest@gopichand-sh:~$</span>
+            <span class="console-input-demo">cat intro.md</span>
+          </div>
+          <div class="console-output">
+            Hi, I'm Gopichand. A B.Tech CSE student (2023-2027) with 8.0 CGPA, currently working as an AI Intern at Topgrade Innovation. Type 'help' to explore my portfolio in this terminal!
+          </div>
+          <div id="console-history"></div>
+          <div class="console-input-line">
+            <span class="console-prompt">guest@gopichand-sh:~$</span>
+            <input type="text" id="console-input" autofocus autocomplete="off" spellcheck="false" placeholder="type 'help'..."/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="section-container">
+      <h2 class="section-title reveal">About <span class="highlight-text">Me</span></h2>
+      <div class="about-grid">
+        <!-- Profile Column -->
+        <div class="about-profile-card reveal-left">
+          <div class="profile-frame">
+            <img src="/assets/profile-BLvT6kDV.png" alt="Gopichand Sabbavarapu Avatar" class="profile-img">
+          </div>
+          <div class="profile-info">
+            <h3>Gopichand Sabbavarapu</h3>
+            <p class="profile-tag">AI Intern & CSE Undergrad</p>
+            <hr class="profile-divider">
+            <ul class="profile-details">
+              <li><i class="fa-solid fa-location-dot"></i> Kokrajhar, Assam, India</li>
+              <li><i class="fa-regular fa-envelope"></i> gopichand241975@gmail.com</li>
+              <li><i class="fa-solid fa-phone"></i> +91 6301346749</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience & Education Timeline -->
+        <div class="about-timeline-container reveal-right">
+          <h3>My <span class="highlight-text">Journey</span></h3>
+          <div class="timeline">
+            <!-- Timeline Item: Intern -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jun 2026 - Aug 2026</div>
+              <div class="timeline-content">
+                <h4>Artificial Intelligence Intern</h4>
+                <p class="timeline-subtitle">Topgrade Innovation</p>
+                <p class="timeline-desc">
+                  Working on hands-on ML/AI applications, data preprocessing, and learning modern AI workflows. Created real-world models and compared onboard, edge, and cloud deployment latency.
+                </p>
+              </div>
+            </div>
+            
+            <!-- Timeline Item: B.Tech -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Aug 2023 - Jul 2027</div>
+              <div class="timeline-content">
+                <h4>B.Tech in Computer Science & Engineering</h4>
+                <p class="timeline-subtitle">Central Institute of Technology Kokrajhar</p>
+                <p class="timeline-desc">
+                  Gaining a robust grounding in algorithms, database design, computer networks, and data systems. Maintained a CGPA of 8.0.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item: Junior College -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">Jun 2021 - Mar 2023</div>
+              <div class="timeline-content">
+                <h4>Intermediate Education</h4>
+                <p class="timeline-subtitle">Sri Chaitanya Junior College, Visakhapatnam</p>
+                <p class="timeline-desc">
+                  Focused heavily on mathematics, physics, and chemistry. Graduated with 94.6%.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item: Secondary -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">2020 - 2021</div>
+              <div class="timeline-content">
+                <h4>Secondary School Education</h4>
+                <p class="timeline-subtitle">Pratibha Vidyalayam, Sabbavaram</p>
+                <p class="timeline-desc">
+                  Graduated with a board percentage of 99.8%.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="section-container">
+      <h2 class="section-title reveal">My <span class="highlight-text">Skills</span></h2>
+      <div class="skills-grid stagger-children">
+        <!-- Skill Card: Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li><span>Python</span><div class="skill-progress"><span style="width: 90%;"></span></div></li>
+            <li><span>Java</span><div class="skill-progress"><span style="width: 80%;"></span></div></li>
+            <li><span>SQL</span><div class="skill-progress"><span style="width: 85%;"></span></div></li>
+            <li><span>HTML / CSS</span><div class="skill-progress"><span style="width: 95%;"></span></div></li>
+            <li><span>JavaScript</span><div class="skill-progress"><span style="width: 70%;"></span></div></li>
+          </ul>
+        </div>
+
+        <!-- Skill Card: Frameworks -->
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Frameworks</h3>
+          <ul class="skill-list">
+            <li><span>FastAPI</span><div class="skill-progress"><span style="width: 85%;"></span></div></li>
+            <li><span>Streamlit</span><div class="skill-progress"><span style="width: 90%;"></span></div></li>
+            <li><span>Flask</span><div class="skill-progress"><span style="width: 80%;"></span></div></li>
+          </ul>
+        </div>
+
+        <!-- Skill Card: Libraries -->
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-cubes"></i></div>
+          <h3>Libraries</h3>
+          <ul class="skill-list">
+            <li><span>NumPy</span><div class="skill-progress"><span style="width: 85%;"></span></div></li>
+            <li><span>Pandas</span><div class="skill-progress"><span style="width: 80%;"></span></div></li>
+            <li><span>Scikit-Learn</span><div class="skill-progress"><span style="width: 75%;"></span></div></li>
+            <li><span>OpenCV</span><div class="skill-progress"><span style="width: 80%;"></span></div></li>
+            <li><span>YOLOv8 & ONNX</span><div class="skill-progress"><span style="width: 75%;"></span></div></li>
+          </ul>
+        </div>
+
+        <!-- Skill Card: Tools -->
+        <div class="skill-card">
+          <div class="skill-card-icon"><i class="fa-solid fa-toolbox"></i></div>
+          <h3>Developer Tools</h3>
+          <ul class="skill-list">
+            <li><span>Git & GitHub</span><div class="skill-progress"><span style="width: 90%;"></span></div></li>
+            <li><span>Docker</span><div class="skill-progress"><span style="width: 70%;"></span></div></li>
+            <li><span>Postman</span><div class="skill-progress"><span style="width: 85%;"></span></div></li>
+            <li><span>VS Code</span><div class="skill-progress"><span style="width: 95%;"></span></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="section-container">
+      <h2 class="section-title reveal">Featured <span class="highlight-text">Projects</span></h2>
+      
+      <!-- Filter Controls -->
+      <div class="filter-controls">
+        <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+        <button class="filter-btn" data-filter="ai" id="filter-ai">AI/ML</button>
+        <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+        <button class="filter-btn" data-filter="python" id="filter-python">Python</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid stagger-children">
+        <!-- Project 1: SAR Human Detection -->
+        <div class="project-card reveal" data-tags="ai python">
+          <div class="project-card-badge">AI / Computer Vision</div>
+          <div class="project-card-content">
+            <h3>Human Detection for SAR</h3>
+            <p class="project-tagline">Onboard vs Edge vs Cloud Inference</p>
+            <p class="project-desc">
+              Developed a search-and-rescue human detection system utilizing a YOLOv8 ONNX model trained on the VisDrone dataset. Built comparative architectures to analyze latency and power efficiency.
+            </p>
+            <div class="project-tech-badges">
+              <span>Python</span>
+              <span>ONNX</span>
+              <span>OpenCV</span>
+              <span>YOLOv8</span>
+              <span>NumPy</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Kisan-Alert -->
+        <div class="project-card reveal" data-tags="ai web python">
+          <div class="project-card-badge">AI / Agriculture</div>
+          <div class="project-card-content">
+            <h3>Kisan-Alert</h3>
+            <p class="project-tagline">Smart Advisory System for Farmers</p>
+            <p class="project-desc">
+              Created an AI agricultural advisory application featuring image and text-based diagnosis using Gemini AI. Configured weather forecasts and dry-spell irrigation recommendation systems.
+            </p>
+            <div class="project-tech-badges">
+              <span>FastAPI</span>
+              <span>Streamlit</span>
+              <span>Firebase</span>
+              <span>Gemini AI</span>
+              <span>OpenWeather</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: CarCare -->
+        <div class="project-card reveal" data-tags="web python">
+          <div class="project-card-badge">Full-Stack</div>
+          <div class="project-card-content">
+            <h3>CarCare</h3>
+            <p class="project-tagline">Car Maintenance Booking Platform</p>
+            <p class="project-desc">
+              Engineered a full-stack booking application using Flask and SQLite. Built secure customer/owner dashboards, interactive booking calendar, and integrated custom test payment simulation.
+            </p>
+            <div class="project-tech-badges">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Flask</span>
+              <span>SQLite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Source Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certs-section">
+    <div class="section-container">
+      <h2 class="section-title reveal">Certifications & <span class="highlight-text">Badges</span></h2>
+      <div class="certs-grid stagger-children">
+        <!-- Cert 1 -->
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="cert-info">
+            <h3>AWS Solutions Architect</h3>
+            <p>Amazon Web Services</p>
+          </div>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <div class="cert-info">
+            <h3>JP Morgan Software Stimulation</h3>
+            <p>J.P. Morgan</p>
+          </div>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <div class="cert-info">
+            <h3>GenAI Powered Data Analytics</h3>
+            <p>Job Simulation</p>
+          </div>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-file-invoice"></i></div>
+          <div class="cert-info">
+            <h3>LaTeX Workshop</h3>
+            <p>Academic Document Preparation</p>
+          </div>
+        </div>
+
+        <!-- Cert 5 -->
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-info">
+            <h3>IBM Generative AI & AI Agent</h3>
+            <p>IBM Developer</p>
+          </div>
+        </div>
+
+        <!-- Cert 6 -->
+        <div class="cert-card">
+          <div class="cert-icon"><i class="fa-solid fa-brain"></i></div>
+          <div class="cert-info">
+            <h3>Anthropic AI Fluency</h3>
+            <p>Framework & Foundations</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="section-container">
+      <h2 class="section-title reveal">Get In <span class="highlight-text">Touch</span></h2>
+      
+      <div class="contact-grid">
+        <!-- Contact Info Cards -->
+        <div class="contact-info reveal-left">
+          <h3>Let's create something together.</h3>
+          <p>
+            Whether you want to discuss potential internships, talk about AI/ML deployments, or look into full-stack booking architectures, feel free to drop a line.
+          </p>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <span>Email Me</span>
+              <a href="mailto:gopichand241975@gmail.com">gopichand241975@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span>Call Me</span>
+              <a href="tel:+916301346749">+91 6301346749</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container reveal-right">
+          <form id="contact-form" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" required placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" required placeholder="Your Email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="form-subject">Subject</label>
+              <input type="text" id="form-subject" required placeholder="Project Inquiries, Internships, etc.">
+            </div>
+            <div class="form-group">
+              <label for="form-message">Message</label>
+              <textarea id="form-message" required rows="5" placeholder="Let's talk about..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Send Message</button>
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <p>&copy; 2026 Gopichand Sabbavarapu. Built with pure HTML, CSS, and JS.</p>
+      <div class="footer-links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom Scripts -->
+</body>
+</html>
