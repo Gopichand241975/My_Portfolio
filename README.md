@@ -2,6 +2,7 @@
 
 https://gopichand241975.github.io/My_Portfolio/
 
+
 ## 🛠️ Stack and Tools Used in This Portfolio
 
 This website was developed using lightweight, modern frontend practices and configurations:
