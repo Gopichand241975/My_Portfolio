@@ -17,7 +17,7 @@ This website was developed using lightweight, modern frontend practices and conf
 
 ---
 
-## 📄 Technical Profile & Skills (According to Resume)
+## 📄 Technical Profile & Skills
 
 This section maps out all the technologies, frameworks, and developer tools Gopichand Sabbavarapu has experience with, as highlighted in his professional resume:
 
