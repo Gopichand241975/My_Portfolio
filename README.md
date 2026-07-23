@@ -84,6 +84,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed (v18 or higher recom
 ---
 
 ## 🎨 Interactive Console Terminal (Easter Egg)
+
 The portfolio includes a retro interactive prompt in the Hero section. Click anywhere inside the terminal box and type commands:
 - `help` - Show all available inputs.
 - `about` - Display summary of education and current AI internship.
